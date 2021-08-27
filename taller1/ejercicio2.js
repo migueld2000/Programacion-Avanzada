@@ -1,4 +1,4 @@
-function CodigoNave (Codigo_Nave,separacionCadena) 
+function CodigoNave (Codigo_Nave) 
 {
     let separacionCadena=Codigo_Nave.split(":");
     Codigo_Nave=CodigoNave;
