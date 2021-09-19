@@ -1,29 +1,21 @@
-function reclutar(padawan)
-{
-   let padawan={
-        nombre=juan,
-        planeta=ABH431,
-        edad=10,
-        estatura=1.70
-    }
-    if(edad<15)
-    {
-        let mensaje=("Manejo de la fuerza");
-        padawan(mensaje,true);
-    }
-    else
-    {
-        let mensaje=("Manejo de la fuerzasable de luz");
-        padawan(mensaje,false);
-    }
+function reclutar(nombre, planeta, edad, estatura, padawan) {
+  if (edad < 15) {
+    let mensaje = "Manejo de la fuerza";
+    padawan(mensaje, true);
+  } else {
+    let mensaje = "Manejo del sable de luz";
+    padawan(mensaje, false);
+  }
 }
-reclutar(function(mensaje,bandera){
-    console.log(mensaje);
-    if(bandera)
-    {
-        console.log("entrenamiento abansado");
-    }
-    else{
-        console.log("entrenamiento principal");
-    }
-})
+reclutar("juan", "ABH431", 16, 1.7, function (mensaje, bandera)
+{
+  console.log(mensaje);
+  if (bandera) 
+  {
+    console.log("entrenamiento principal");
+  } 
+  else 
+  {
+    console.log("entrenamiento abansado");
+  }
+});
